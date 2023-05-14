@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-2 m-2 bg-LightGrey font-Poppins">
+  <div class="container flex items-start justify-between max-w-lg border bg-White rounded-br-3xl">
+    <div class="p-2 m-2 border">
+      <form action="" method="get" class="">
+        <label class="block uppercase text-md font-Poppins text-SmokeyGrey hover:text-lg" for="day">day</label>
+        <input class="w-3/5 p-2 mt-2 text-lg font-bold font-Poppins text-OffBlack hover:border" type="text" id="day" name="day" min="1" max="31" placeholder="DD" required>
+        <span class="invisible block text-LightRed text-md font-Poppins">This field is required</span>
+      </form>
+    </div>
+    <div class="p-2 m-2 border">
+      <form action="" method="get">
+        <label class="block uppercase text-md font-Poppins text-SmokeyGrey hover:text-lg" for="month"> Month</label>
+        <input class="w-3/5 p-2 mt-2 text-lg font-bold font-Poppins text-OffBlack hover:border" type="text" id="month" name="month" min="1" max="12" placeholder="MM" required>
+        <span class="invisible block font-Poppins text-LightRed text-md">This field is required</span>
+      </form>
+    </div>
+    <div class="p-2 m-2 border">
+      <form action="" method="get">
+        <label class="block uppercase text-md font-Poppins text-SmokeyGrey hover:text-lg" for="year">Year</label>
+        <input class="w-3/5 p-2 mt-2 text-lg font-bold font-Poppins text-OffBlack hover:border" type="text" id="year" name="year" min="1900" max="2023" placeholder="YYYY" required>
+        <span class="invisible block font-Poppins text-LightRed text-md">This field is required</span>
+      </form>
+    </div>
+  </div>
+  <div class="m-2">
+    <button type="submit" id="calculate-age-btn" class="py-8 transition ease-in-out border-2 rounded-full cursor-pointer x-2 bg-Purple hover:bg-LightRed">
+      <img src="images/icon-arrow.svg" alt="arrow" class="w-10">
+    </button>
+  </div>
+  <div id="age-result" class="p-2 m-2">
+    <p class="ml-2 text-4xl italic font-bold tracking-wide hover:text-6xl font-Poppins text-OffBlack"><span id="years" class="mr-2 text-4xl text-Purple hover:text-6xl">--</span>years</p>
+    <p class="ml-2 text-4xl italic font-bold tracking-wide hover:text-6xl font-Poppins text-OffBlack"><span id="months" class="mr-2 text-4xl text-Purple hover:text-6xl months">--</span>months</p>
+    <p class="ml-2 text-4xl italic font-bold tracking-wide hover:text-6xl font-Poppins text-OffBlack"><span id="days" class="mr-2 text-4xl text-Purple hover:text-6xl days">--</span>days</p>
+  </div>
+  
+  
+  <div class="text-sm attribution font-Poppins text-SmokeyGrey">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tonderai Dzvova</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
